@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'taskmaster.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("postgresql://neondb_owner:npg_9EUtrLIoTzQ3@ep-sweet-cake-a2ilh66x.eu-central-1.aws.neon.tech/lift_palm_jolt_852247"))
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 
